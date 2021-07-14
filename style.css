@@ -1,0 +1,127 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+/* common styles */
+body{
+    font-family: font-family: 'Poppins', sans-serif;
+    margin: 15px;
+}
+
+
+
+/*  banner style */
+
+.top-banner{
+  /* position: relative; */
+}
+
+.banner{
+    display: flex;
+    justify-content: center;
+    background-color: #2D25A0;
+}
+
+.banner-text{
+  /* padding-left: 5px;
+    padding-top: 40px; */
+    font-size: 35px;
+    color: #FFFFFF;
+}
+
+.banner-image img{
+    height: 438px;
+    width: 556.01px;
+    /* padding-right: 200px;
+    padding-top: 20px; */
+}
+button{
+background-color: #E02C6D;
+color: #FFFFFF;
+margin: 15px;
+padding: 10px 24px;
+transition: transform 3s ease-in-out;
+}
+
+button:hover{
+            
+    transform: translate(50px);
+}
+
+.button{
+    
+}
+
+/* players style */
+
+.player-image img{
+    width: 330px;
+    
+    
+}
+
+
+.players{
+    margin: 50px;
+    background-color: #FFFFFF;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+ .player-info{
+width: 270px;
+
+
+}
+.player{
+    width: 500px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-top: 10px;
+    padding-left: 150px;
+    box-shadow: 10px 10px 40px gray;   
+}
+
+/* footer style */
+
+.logo img{
+    width: 270px;
+    height: 62px;
+}
+.football-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* media quaries */
+
+/* mobile device */
+@media only screen and (max-width:688px) {
+    .container, .top-banner{
+        width: 100%;
+    }
+    .top-banner, .banner, .players{
+    grid-template-columns: repeat(1, 1fr);
+    display: grid;
+    }
+    
+    .banner-text, .player, .player-info{
+        flex-direction: column;
+        width: 100%;
+    }
+      
+}
+/* tablet devices */
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .container{
+        width: 100%;
+    }
+    .banner, .players{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .player, .player-info{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
